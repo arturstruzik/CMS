@@ -26,6 +26,12 @@ a:hover, a:active{
 }
 
 .logo{
+    right:0;
+    top:0;
+    line-height:78px;
+}
+
+.logo .logo-image{
     position:absolute;
     right:0;
     top:0;
@@ -36,28 +42,48 @@ a:hover, a:active{
     height:45px;
 }
 
+.logo .logo-social-media{
+    position:absolute;
+    z-index:2;
+    right:220px;
+    top:8px;
+}
+
 .image-shadow{
-    z-index:50;
+    z-index:1;
     height:70px;
     width:70px;
     position:absolute;
     top:5px;
     left:0;
-    -webkit-box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.74);
     -moz-box-shadow: inset 0 0 0 5px rgba(82, 230, 238, 0.60);
-    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.74);
 }
 
 .about-author-image img{
-    z-index:3;
     height:70px;
     position:absolute;
     top:5px;
     left:0;
 }
 
+.fa:hover{
+    color:rgba(82, 230, 238, 1)!important;
+}
+
+.fa-facebook{
+    color:white;
+}
+
+.fa-youtube{
+    color:white;
+    padding-right:10px;
+}
+
 .site-top .about-author{
     position:absolute;
+    z-index:2;
     left:75px;
     top:0;
     height:80px;
