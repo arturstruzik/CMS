@@ -6,13 +6,34 @@
     <title>FutureNet Michał Wosztyl</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/dd8b72afbc.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="site-top">
-
+    <div class="site-top">
+        <div class="container">
+            <div class="about-author-image">
+                <div class="image-shadow"></div>
+                <img src="~/Assets/img/michal.jpg" />
+            </div>
+            <div class="about-author">
+                <div class="about-author-name">
+                    MICHAŁ WOSZTYL
+                </div>
+                <div class="about-author-tags">
+                    #coach #przedsiębiorca #szczęśliwy#mąż
+                    <i class="fa fa-envelope" aria-hidden="true"></i> kontakt@futureNet.net<br/>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i> +48 666 487 754
+                </div>
+            </div>
+            <div class="logo">
+                <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
+                <img src="~/Assets/img/FN_LOGO_mini.png" />
+            </div>
         </div>
-        <div class="fixed-top">
+    </div>
+    <div class="fixed-top">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -30,6 +51,8 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="body-content">
             @RenderBody()
         </div>
@@ -38,7 +61,7 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/site.js")
