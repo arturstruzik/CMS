@@ -1,17 +1,26 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 100px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
+.site-top{
+    display:inline-block;
+    line-height:50px;
+    height:50px;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+.fixed-top{
+    position:absolute;
+    top:50px;
+    width:100%;
+    z-index:3;
+}
+
 .dl-horizontal dt {
     white-space: normal;
 }
