@@ -119,8 +119,52 @@ a:hover, a:active{
     border-top: 0.2vh solid #a0faff;
 }
 
+.fixed-top img{
+    height:35px;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
 .dl-horizontal dt {
     white-space: normal;
+}
+
+#login-form{
+    position: relative;
+    line-height: 45px;
+}
+
+.login-input{
+    height: 3.4vh;
+    width: 9vw;
+    padding-left: 1em;
+    color: #808080;
+    border: 0.1vh solid #51ebf3;
+    border-radius: 0.8vh;
+    display: inline-block;
+    text-align: start;
+    font-size: 1.6vh;
+    background: url(/Assets/img/input_background.png) no-repeat;
+    background-size: cover;
+    margin-right: 0.4em;
+}
+
+.login-btn{
+    position: relative;
+    top:2px;
+    height: 3.4vh;
+    line-height: 3.4vh;
+    width: 6vw;
+    color: white;
+    border: 0.1vh solid #51ebf3;
+    border-radius: 0.8vh;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.6vh;
+    background: url(/Assets/img/zaloguj.png) no-repeat;
+    background-size: cover;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */

@@ -10,7 +10,7 @@
     <script src="https://use.fontawesome.com/dd8b72afbc.js"></script>
 </head>
 <body>
-    <div class="site-top">
+    <div id="section1" class="site-top">
         <div class="container">
             <div class="about-author-image">
                 <div class="image-shadow"></div>
@@ -21,8 +21,10 @@
                     MICHAŁ WOSZTYL
                 </div>
                 <div class="about-author-tags">
-                    #coach #przedsiębiorca #szczęśliwy#mąż
-                    <i class="fa fa-envelope" aria-hidden="true"></i> kontakt@futureNet.net<br/>
+                    <div id="about-author-tags">
+                        #coach #przedsiębiorca #szczęśliwy#mąż
+                    </div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> kontakt@futureNet.net<br />
                     <i class="fa fa-phone-square" aria-hidden="true"></i> +48 666 487 754
                 </div>
             </div>
@@ -32,7 +34,7 @@
                     <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                 </div>
                 <div class="logo-image">
-                    <img src="~/Assets/img/FN_LOGO_mini.png" />
+                    <img id="logo-image" src="~/Assets/img/FN_LOGO_mini.png" />
                 </div>
             </div>
         </div>
@@ -45,13 +47,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <div class="navbar-brand">
+                    <img id="navbar-brand-image" src="~/Assets/img/FN_LOGO_short.png" alt="FutureNet logo" />
+                </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Strona główna", "Index", "Home", null, null, "section-top", new { categoryid = "blah" }, null)</li>
+                    <li>@Html.ActionLink("Oferta", "Index", "Home", null, null, "section-oferta", new { categoryid = "blah" }, null)</li>
+                    <li>@Html.ActionLink("Kontakt", "Index", "Home", null, null, "section-kontakt", new { categoryid = "blah" }, null)</li>
+                    <li>@Html.ActionLink("Dołącz do nas", "Index", "Home", null, null, "section-dolacz", new { categoryid = "blah" }, null)</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
