@@ -13,7 +13,7 @@
     });
 
     if (window.innerWidth < 768) {
-        $('#navbar-brand-image').attr('src', 'Assets/img/FN_LOGO_mini.png');
+        $('#navbar-brand-image').attr('src', '/Assets/img/FN_LOGO_mini.png');
         $('.navbar-brand').css('padding-left', '25px');
         $('#logo-image').hide();
         $('.logo .logo-social-media').css('right', '15px');
@@ -22,8 +22,9 @@
         $('.login-btn').css("width", '50px');
         $('.login-btn').css("margin-left", "15px");
         $('#login-form').css("line-height", "");
+        $('footer .about-author').css("height", "");
     } else {
-        $('#navbar-brand-image').attr('src', 'Assets/img/FN_LOGO_short.png');
+        $('#navbar-brand-image').attr('src', '/Assets/img/FN_LOGO_short.png');
         $('.navbar-brand').css('padding-left', '');
         $('#logo-image').show();
         $('.logo .logo-social-media').css('right', '220px');
@@ -32,6 +33,7 @@
         $('.login-btn').css("width", '6vw');
         $('.login-btn').css("margin-left", "0");
         $('#login-form').css("line-height", "45px");
+        $('footer .about-author').css("height", "110px");
     }
 
     if (window.innerWidth < 380) {
@@ -42,7 +44,7 @@
 
     $(window).resize(function () {
         if (window.innerWidth < 768) {
-            $('#navbar-brand-image').attr('src', 'Assets/img/FN_LOGO_mini.png');
+            $('#navbar-brand-image').attr('src', '/Assets/img/FN_LOGO_mini.png');
             $('.navbar-brand').css('padding-left', '25px');
             $('#logo-image').hide();
             $('.logo .logo-social-media').css('right', '15px');
@@ -51,8 +53,9 @@
             $('.login-btn').css("width", '50px');
             $('.login-btn').css("margin-left", "15px");
             $('#login-form').css("line-height", "");
+            $('footer .about-author').css("height", "");
         } else {
-            $('#navbar-brand-image').attr('src', 'Assets/img/FN_LOGO_short.png');
+            $('#navbar-brand-image').attr('src', '/Assets/img/FN_LOGO_short.png');
             $('.navbar-brand').css('padding-left', '');
             $('#logo-image').show();
             $('.logo .logo-social-media').css('right', '220px');
@@ -61,6 +64,7 @@
             $('.login-btn').css("width", '6vw');
             $('.login-btn').css("margin-left", "0");
             $('#login-form').css("line-height", "45px");
+            $('footer .about-author').css("height", "110px");
         }
 
         if (window.innerWidth < 380) {
